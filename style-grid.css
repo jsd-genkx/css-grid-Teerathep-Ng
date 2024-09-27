@@ -1,11 +1,82 @@
 /* exercise 1 */
-
+/* .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+} */
 /* exercise 2 */
-
+/* .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+} */
 /* exercise 3 */
+/* .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+.item-1 {
+    grid-column: span 2;
+} */
 
 /* exercise 4 */
+/* .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+.item-1 {
+grid-column: span 2;
+}
+
+.item-4 {
+    grid-column-start: 2;
+    grid-row-start: 3;
+} */
 
 /* exercise 5 */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    grid-template-areas:
+        "header header"
+        "main sidebar"
+        "main2 sidebar2"
+        "main3 sidebar3"
+        "footer footer";
+}
 
+.item-1 {
+    grid-area: header;
+    grid-column: span 4;
+}
+.item-2 {
+    grid-area: main;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+.item-3 {
+    grid-area: sidebar;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-end: 4;
+}
+.item-4 {
+    grid-column: span 2;
+}
+.item-5 {
+    grid-area: footer;
+    grid-column: span 4;
+
+}
 /* exercise 6 (optional) - follow the assigned YT video */
